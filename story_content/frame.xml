@@ -6,12 +6,13 @@
     <layout name="npxnabnsnfns10111000101" font="Open Sans" controllayout="npxnabnsnfns10111000101" colorscheme="npxnabnsnfns10111000101" string_table="npxnabnsnfns10111000101" />
     <layout name="npnxnanbnsnfns10111000101" font="Open Sans" controllayout="npnxnanbnsnfns10111000101" colorscheme="npxnabnsnfns10111000101" string_table="npxnabnsnfns10111000101" />
     <layout name="pxabnsnfns10111000100" font="Open Sans" controllayout="pxabnsnfns10111000100" colorscheme="npxnabnsnfns10111000101" string_table="npxnabnsnfns10111000101" />
+    <layout name="pnxanbnsnfns10111000101" font="Open Sans" controllayout="pnxanbnsnfns10111000101" colorscheme="npxnabnsnfns10111000101" string_table="npxnabnsnfns10111000101" />
   </layouts>
   <control_options>
     <optiongroups>
       <optiongroup name="sidebaroptions">
         <options>
-          <option name="title_enabled" value="true">
+          <option name="title_enabled" value="false">
             <options>
               <option name="title_text" value="Week 3 Overview" />
             </options>
@@ -196,6 +197,29 @@
         </controls>
       </control>
       <control name="close_btn" enabled="false" />
+    </control_layout>
+    <control_layout name="pnxanbnsnfns10111000101">
+      <control name="volume" enabled="true" />
+      <control name="seekbar" enabled="true" />
+      <control name="replay" enabled="true" />
+      <control name="pauseplay" enabled="true" />
+      <control name="logo" enabled="false" />
+      <control name="previous" enabled="true" />
+      <control name="next" enabled="false" />
+      <control name="swipeleft" enabled="true" />
+      <control name="swiperight" enabled="false" />
+      <control name="submit" enabled="false" />
+      <control name="finish" enabled="false" />
+      <control name="submitall" enabled="false" />
+      <control name="resources" enabled="false" />
+      <control name="glossary" enabled="false" />
+      <control name="transcript" enabled="false" />
+      <control name="outline" enabled="true">
+        <controls>
+          <control name="search" enabled="false" />
+        </controls>
+      </control>
+      <control name="close_btn" enabled="true" />
     </control_layout>
   </control_layouts>
   <colorschemes>
@@ -1119,7 +1143,7 @@
       <string id="acc_definition">definition</string>
       <string id="glossary">Glossary</string>
       <string id="terms">Terms</string>
-      <string id="outline">Menu</string>
+      <string id="outline">Click a title to jump to a slide:</string>
       <string id="disabled_orientation">Please rotate your device</string>
       <string id="next">NEXT</string>
       <string id="acc_next">next</string>
@@ -1164,24 +1188,24 @@
   <nav_data>
     <outline>
       <links>
-        <slidelink slideid="_player.5rHXeOybckg.5oC5uyHAkc4" displaytext="Overview - Week 3" expand="true" type="slide">
+        <slidelink slideid="_player.5rHXeOybckg" displaytext="Week 3 Overview" expand="true" type="slide">
           <links>
+            <slidelink slideid="_player.5rHXeOybckg.5eYmg1GHlMk" displaytext="Week 3 Overview" expand="true" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.6pktNeyDbRg" displaytext="Contents" expand="false" type="slide" />
-            <slidelink slideid="_player.5rHXeOybckg.6J5xFVlN24U" displaytext="Video Playlist Rubric" expand="false" type="slide" />
-            <slidelink slideid="_player.5rHXeOybckg.62sbS57Hf7F" displaytext="Record a Video Rubric" expand="false" type="slide" />
-            <slidelink slideid="_player.5rHXeOybckg.5uFnQs1EVpI" displaytext="Convert a Video to GIF Rubric" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5rHXeOybckg" displaytext="Activity - Create a Playlist" expand="false" type="slide">
+        <slidelink slideid="_player.5rHXeOybckg" displaytext="Activity - Create a Playlist" expand="true" type="slide">
           <links>
+            <slidelink slideid="_player.5rHXeOybckg.6J5xFVlN24U" displaytext="Video Playlist Rubric" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.6rgbRHvPKyQ" displaytext="Create a Playlist" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.6RweSoYEPH3" displaytext="Edit &amp; Share a Playlist" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.5xEZ8KhTA80" displaytext="Add More Videos to a Playlist" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.5hoAci4Y89G" displaytext="Adjust Playlist Order" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5rHXeOybckg" displaytext="Project - Record a Video" expand="false" type="slide">
+        <slidelink slideid="_player.5rHXeOybckg" displaytext="Project - Record a Video" expand="true" type="slide">
           <links>
+            <slidelink slideid="_player.5rHXeOybckg.62sbS57Hf7F" displaytext="Record a Video Rubric" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.6aowi4pKcHV" displaytext="Search for a Video" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.6PwR9fzikCI" displaytext="Filter Search by Upload Date" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.62RyTx5JqsQ" displaytext="Add Extensions to Chrome" expand="false" type="slide" />
@@ -1191,8 +1215,9 @@
             <slidelink slideid="_player.5rHXeOybckg.6SPkCYFX4PX" displaytext="Share a Link to a Loom Video" expand="false" type="slide" />
           </links>
         </slidelink>
-        <slidelink slideid="_player.5rHXeOybckg" displaytext="Project - Convert a Video to a GIF" expand="false" type="slide">
+        <slidelink slideid="_player.5rHXeOybckg" displaytext="Project - Convert a Video to a GIF" expand="true" type="slide">
           <links>
+            <slidelink slideid="_player.5rHXeOybckg.5uFnQs1EVpI" displaytext="Convert a Video to GIF Rubric" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.5zXnprTCnWI" displaytext="Convert a Video to a GIF" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.5tnwkD1CMSs" displaytext="Upload a GIF to Google Drive" expand="false" type="slide" />
             <slidelink slideid="_player.5rHXeOybckg.6YlYZQzgmVW" displaytext="Share a Link from Drive" expand="false" type="slide" />
